@@ -33,7 +33,6 @@ function viewCart() {
       }
       inCart.push(normal)
 
-
       // if (i === 0 && i+1 === cart.length) {
       //   inCart.push(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`)
       // }
