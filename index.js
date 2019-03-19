@@ -24,16 +24,19 @@ function viewCart() {
   else {
     var inCart = []
     for (let i = 0; i < cart.length; i++) {
-      if (i === 0 && i+1 === cart.length) {
-        inCart.push(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`)
-      }
-      else if (i === 1 && i === cart.length) {
-        inCart.pop()
-        inCart.push(`, and ${cart[i].itemName} at $${cart[i].itemPrice}.`)
-      }
-      else {
+      inCart.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
 
-      }
+
+      // if (i === 0 && i+1 === cart.length) {
+      //   inCart.push(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`)
+      // }
+      // else if (i === 1 && i+1 === cart.length) {
+      //   inCart.pop()
+      //   inCart.push(`, and ${cart[i].itemName} at $${cart[i].itemPrice}.`)
+      // }
+      // else {
+      //
+      // }
     }
     return inCart
   }
