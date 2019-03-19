@@ -28,7 +28,7 @@ function viewCart() {
       if (i === 0) {
         normal = `In your cart, you have ${normal}`
       } else if (cart.length > 1) {
-        normal = `, and ${normal}`
+        normal = `and ${normal}`
       }
       if (i + 1 === cart.length) {
         normal = `${normal}.`
@@ -46,7 +46,7 @@ function viewCart() {
       //
       // }
     }
-    return inCart
+    return inCart.join(', ')
   }
 }
 
