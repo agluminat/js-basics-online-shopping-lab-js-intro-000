@@ -27,7 +27,8 @@ function viewCart() {
       var normal = `${cart[i].itemName} at $${cart[i].itemPrice}`
       if (i === 0) {
         normal = `In your cart, you have ${normal}`
-      } else if (i + 1 === cart.length) {
+      }
+      if (i + 1 === cart.length) {
         normal = `${normal}.`
       }
       inCart.push(normal)
